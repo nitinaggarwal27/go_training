@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"dfs1"
-	"bfs1"
+	"dfs"
+	"bfs"
 )
 
 func addEdge(node[][] int, a,b int){
@@ -23,7 +23,7 @@ func main(){
 		addEdge(node,a,b)
 	}
 	fmt.Printf("Depth First Search: ")
-	dfs1.Search(node,0);
+	dfs.Search(node,0);
 	fmt.Printf("Breadth First Search: ")
-	bfs1.Search(node,0);
+	bfs.Search(node,0);
 }
